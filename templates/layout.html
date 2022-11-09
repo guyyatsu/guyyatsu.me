@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>{{PageTitle}}</title>
+  </head>
+
+  <body>
+    <div id="PageBodyContent">
+
+      <div id="PageTitleHeader">
+        <div id="HeaderTopBar"></div>
+        <div id="HeaderLeftBar"></div>
+	<h1>{{PageTitle}}</h1>
+      </div>
+
+      <div id="BodyContentBlock">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+    </div>
+  </body>
+
+  <footer>
+    <div id="BusinessCard">
+      <address>
+        Written by: <a href="mailto:{{EmailAddress}}">{{PageAuthor}}</a><br>
+
+      </address>
+    </div>
+  </footer>
+</html>
